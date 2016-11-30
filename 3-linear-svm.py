@@ -1,10 +1,7 @@
 from hist_feature_test import *
-
-
 from sklearn.pipeline import Pipeline
 import numpy as np
 from sklearn import svm
-
 from sklearn.svm import SVC
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics import accuracy_score

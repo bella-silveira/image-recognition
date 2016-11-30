@@ -3,26 +3,24 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-# exibe uma imagem utilizando a biblioteca pyopencv2
+# displays an image using the library pyopencv2
 def show_img_cv(window_title, img):
 	cv2.imshow(window_title, img)
 	cv2.waitKey(0)
 
 
-# exibe uma imagem utilizando a biblioteca matplotlib
+# displays an image using the library matplotlib
 def show_img_matplot(img):
-	# pegadinha aqui (o cv2 usa BGR ao inves de RGB)
+	# reminder: cv2 uses BGR instead of RGB
 	plt.imshow(img)
 	plt.show()
 
-
 if __name__ == "__main__":
 
-
-	# carregando a imagem como um nparray 
+	# loading the image as a nparray 
 	img_file_path = "./img/Lenna.png"
 	img = cv2.imread(img_file_path)
-	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # para converter para RGB
+	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # converting to RGB
 
 	# 1)
 	show_img_cv("first image", img)
