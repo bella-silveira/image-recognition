@@ -9,4 +9,4 @@ Before running the project, download and install [OpenCV](http://opencv.org/down
 
 ##Run
 
-First, run `python 2-hist.py` to generate the image features to feed the neural network. Then, run `python multi-layer.py` to actually run the neural network that recognizes the images.
+First, run `python 2-hist.py` to generate the image features to feed the neural network. Then, run `python multi-layer.py` to actually run the neural network that recognizes the image patterns.
