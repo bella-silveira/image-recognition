@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import os
 
-# retorna uma image com apenas um dos canais
+# returns an image with only one of the channels
 def get_img_channel(img, channel):
 
 	img_copy = np.copy(img) 
@@ -93,7 +93,7 @@ def generate_vector(img_path):
 
 def generate_vector2(img_path):
 	img = cv2.imread(img_path)
-	#img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # para converter para GRAY <<<<<<<<<<<<<<<<<<
+	#img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # converting to GRAY <<<<<<<<<<<<<<<<<<
 	hog = cv2.HOGDescriptor("hog.xml")
 	h = hog.compute(img)
 	return np.hstack(h)
@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
 	img_file_path = "./img/Lenna.png"
 	img = cv2.imread(img_file_path)
-	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # covert to RGB
+	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) # coverting to RGB
 
 	# 1)
 	#draw_hist(img)
@@ -183,15 +183,3 @@ if __name__ == "__main__":
 	out_file.write('y_test='+str(y_test)+"\n")
 
 	out_file.close()
-
-
-
-
-
-
-
-
-
-
-
-

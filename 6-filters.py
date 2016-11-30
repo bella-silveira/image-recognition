@@ -4,7 +4,6 @@ from rootsift import RootSIFT
 
 #img_file_path = "./img/Lenna.png"
 
-
 img_file_path = "./img/cifar-10/test/truck/delivery_truck_s_000030.png"
 #img_file_path2 = "./img/cifar-10/test/dog/chihuahua_s_001095.png"
 
@@ -17,9 +16,7 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # para converter para GRAY <<<<<<<<<
 
 #(width, height) = img.shape
 
-
 #crop_img = img[0:width/2, 0:height/2]
-
 
 #fig, subs = plt.subplots(1,2)
 #plt.gray()

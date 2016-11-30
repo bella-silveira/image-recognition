@@ -17,7 +17,6 @@ def get_sample(num_samples, X_data, y_data):
 
 	return X_sample, y_sample
 
-
 ######################## creating the model architecture #######################################
 
 # input placeholder
@@ -70,12 +69,9 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 # applying a value for each variable (in this case W and b)
 init = tf.initialize_all_variables()
 
-
 # a session is dependent of the enviroment where tensorflow is running
 sess = tf.Session()
 sess.run(init)
-
-
 
 num_batch_trainning = 1000
 for i in range(10000): # trainning 1000 times
