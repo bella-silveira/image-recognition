@@ -8,7 +8,6 @@ def show_img_cv(window_title, img):
 	cv2.imshow(window_title, img)
 	cv2.waitKey(0)
 
-
 # displays an image using the library matplotlib
 def show_img_matplot(img):
 	# reminder: cv2 uses BGR instead of RGB
@@ -27,5 +26,3 @@ if __name__ == "__main__":
 
 	# 2)
 	show_img_matplot(img)
-
-	
